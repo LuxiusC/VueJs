@@ -7,12 +7,14 @@ const data = {
   {
     label:"My Chart",
     backgroundColor:"#087e8B",
-    data:[500,350,900,750]
+    data:[500,350,900,750],
+    tension:0.8
   },
   {
     label:"My Chart",
     backgroundColor:"#FF5A5F",
-    data:[400,150,200,650]
+    data:[400,150,200,650],
+    tension:0.4
   }
   ]
 }

@@ -1,8 +1,8 @@
 <script setup>
 import { Line } from 'vue-chartjs';
-import {Chart as ChartJS, LinearScale, CategoryScale, Title, Legend, LineElement,PointElement} from "chart.js"
+import {Chart as ChartJS, LinearScale, CategoryScale, Title, Legend, LineElement,PointElement,Filler} from "chart.js"
 
-ChartJS.register(LinearScale, CategoryScale, Title, Legend, LineElement,PointElement)
+ChartJS.register(LinearScale, CategoryScale, Title, Legend, LineElement,PointElement,Filler)
 
 const {data,title} = defineProps(['data','title'])
 const option = {

@@ -8,13 +8,28 @@ const data = {
     label:"My Chart",
     backgroundColor:"#087e8B",
     data:[500,350,900,750],
-    tension:0.8
+    tension:0.8,
+    borderColor: 'rgb(75, 192, 192)',
   },
   {
     label:"My Chart",
     backgroundColor:"#FF5A5F",
     data:[400,150,200,650],
-    tension:0.4
+    tension:0.4,
+    borderColor: 'rgb(75, 192, 192)',
+  }
+  ]
+}
+
+const areaData = {
+  labels: ["A","B","C","D","E"],
+  datasets:[
+  {
+    label:"First Fill",
+    backgroundColor:"#087e8B",
+    data:[500,350,900,750,-500],
+    borderColor: 'rgb(75, 192, 192)',
+    fill: 'origin'
   }
   ]
 }
@@ -29,6 +44,8 @@ const data = {
     <BarChart :data="data" class="chart"/>
     <h1 class="text-2xl">Line Chart</h1>
     <LineChart title="MY LINE CHART":data="data" class="chart"/>
+    <h1 class="text-2xl">Area Chart</h1>
+    <LineChart title="MY AREA CHART" :data="areaData" class="chart"/>
   </div>
 </template>
 

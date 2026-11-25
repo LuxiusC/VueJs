@@ -29,6 +29,7 @@ const areaData = {
     backgroundColor:"#087e8B",
     data:[500,350,900,750,-500],
     borderColor: 'rgb(75, 192, 192)',
+    // origin,false,start,end
     fill: 'origin'
   }
   ]
